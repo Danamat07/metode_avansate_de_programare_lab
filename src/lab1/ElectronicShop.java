@@ -51,9 +51,9 @@ public class ElectronicShop {
     }
 
     public static void main(String[] args) {
-        int[] keyboards = {40, 35, 70, 15, 45};
-        int[] usbDrives = {20, 15, 40, 15};
-        int budget = 30;
+        int[] keyboards = {60};
+        int[] usbDrives = {8, 12};
+        int budget = 60;
         System.out.println("Cheapest keyboard: " + findCheapestKeyboard(keyboards));
         System.out.println("Most expensive article: " + findMostExpensiveItem(keyboards, usbDrives));
         System.out.println("Most expensive USB he can buy: " + findMostExpensiveUSB(usbDrives, budget));

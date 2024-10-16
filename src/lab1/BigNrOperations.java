@@ -98,7 +98,7 @@ public class BigNrOperations {
         int[] dif = substract(num1, num2);
         System.out.println("Difference: " + Arrays.toString(dif));
         // display multiply
-        int[] mul = multiply(num1, 2);
+        int[] mul = multiply(num1, 1);
         System.out.println("Multiplication: " + Arrays.toString(mul));
         // display division
         int[] div = divide(num2, 2);

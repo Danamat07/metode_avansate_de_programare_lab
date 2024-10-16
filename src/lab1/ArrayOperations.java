@@ -52,7 +52,7 @@ public class ArrayOperations {
     }
 
     public static void main(String[] args) {
-        int[] numbers = {4, 8, 3, 10, 17};
+        int[] numbers = {-4, 8, 3, 10, 17};
         ArrayOperations array = new ArrayOperations(numbers);
         // display max nr
         System.out.println("Max number: " + array.findMax());
