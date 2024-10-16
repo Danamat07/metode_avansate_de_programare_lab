@@ -78,16 +78,14 @@ public class BigNrOperations {
             result[i] = current / divisor;
             remain = current % divisor; // noul rest
         }
-        // delete zero from front
-        int index = 0;
-        while (index < result.length && result[index] == 0) {
-            index++;
+        if (result[0] == 0) {
+            int[] final_result = new int[num.length];
+            for (int i = 0; i < final_result.length; i++) {
+                final_result[i] = result[i + 1];
+            }
+            return final_result;
         }
-        // if result is still 0, return 0
-        if (index == result.length) {
-            return new int[] {0};
-        }
-        return Arrays.copyOfRange(result, index, result.length);
+        return result;
     }
 
     public static void main(String[] args) {
